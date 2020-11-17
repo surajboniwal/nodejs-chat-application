@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node | Chat Application</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script src = "/socket.io/socket.io.js"></script>
+<body>
+    
+    <header>
+        <h1>Node JS Chat Application</h1>
+        <h3>Clients Connected : <span id="client-count">0</span></h3>
+    </header>
+
+    <div class="conversation" id="conversation-box">        
+    </div>
+
+    <div class="message-box">
+        <input id="message-input" type="text">
+        <button id="send-button">Send</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
