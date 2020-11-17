@@ -29,4 +29,4 @@ io.on('connection', socket => {
 
 app.use(express.static('public'))
 
-server.listen(process.env.PORT);
+server.listen(process.env.PORT || 3000);

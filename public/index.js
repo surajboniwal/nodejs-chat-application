@@ -15,6 +15,7 @@ socket.on('message', data => {
     text.innerText = data.message
     text.setAttribute('data-before', data.id)
     conversationBox.appendChild(text)
+    conversationBox.scrollTo(0, conversationBox.scrollHeight)
 })
 
 sendButton.addEventListener('click', e => {
@@ -27,6 +28,7 @@ sendButton.addEventListener('click', e => {
         conversationBox.appendChild(text)
         socket.emit('message', messageInput.value)
         messageInput.value = ''
+        conversationBox.scrollTo(0, conversationBox.scrollHeight)
     }
 })
 

@@ -56,6 +56,12 @@ header{
     margin: auto;
     display: flex;
     flex-direction: column;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.conversation::-webkit-scrollbar{
+    display: none;
 }
 
 .conversation > .text{
